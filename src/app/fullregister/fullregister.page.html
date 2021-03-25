@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-item>
+      <ion-input id="inputField" placeholder="Nama"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input id="inputField" placeholder="Email" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input id="inputField" placeholder="No Handphone"></ion-input>
+    </ion-item>
+    <div id="space"></div>
+    <ion-item>
+      <ion-input id="inputField" placeholder="Password" fronControlName="password" [type]="passwordType" clearOnEdit="false"></ion-input>
+      <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)='hideShowPassword()'></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-input id="inputField" placeholder="Konfirmasi Password" fronControlName="password" [type]="kpasswordType" clearOnEdit="false"></ion-input>
+      <ion-icon item-end [name]="kpasswordIcon" class="kpasswordIcon" (click)='hideShowKPassword()'></ion-icon>
+    </ion-item>
+    <div id="space"></div>
+    <div id="space"></div>
+    <ion-button color="medium" (click)="simpan()" >Simpan</ion-button>
+  </div>
+</ion-content>
